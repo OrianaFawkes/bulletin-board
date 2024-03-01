@@ -1,0 +1,61 @@
+name: bulletin_board
+description: "A simple News App"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Icons
+  cupertino_icons: ^1.0.2
+  ionicons: ^0.2.2
+
+  # Networking
+  retrofit: ^3.3.0
+  dio: ^4.0.6
+
+  # State Management
+  flutter_bloc: ^8.1.2
+
+  # Miscellaneous
+  auto_route: ^5.0.4
+  awesome_dio_interceptor: ^0.0.2+4
+  equatable: ^2.0.5
+  floor: ^1.4.1
+  flutter_dotenv: ^5.1.0
+  flutter_hooks: ^0.18.5+1
+  get_it: ^7.2.0
+  google_fonts: ^6.1.0
+    # style: GoogleFonts.libreBodoni(),
+    # style: GoogleFonts.ibmPlexSans(),
+  oktoast: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  auto_route_generator: ^5.0.3
+  build_runner: ^2.3.3
+  floor_generator: ^1.4.1
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^2.0.0
+  retrofit_generator: ^4.1.2
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/bulletin_board_logo.png"
+  adaptive_icon_foreground: "assets/bulletin_board_logo.png"
+  adaptive_icon_background: "#eaddcf"
+
+flutter:
+
+  uses-material-design: true
+  assets:
+    - .env
